@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>covid19 data</title> 
+    </head>
+    <body>
+        Welcome to crowd covid data source <br>
+        <section class="container">
+            <ul class="data">
+                {{ range .CasesTimeSeries }}
+                <li class="casestimeseries">
+                    <div>
+                        Daily confirmed : {{.DailyConfirmed}},Date : {{.Date}}
+                    </div>
+                </li>
+                {{end}}
+            </ul>
+        </section>
+    </body>
+</html>
+
+
+
